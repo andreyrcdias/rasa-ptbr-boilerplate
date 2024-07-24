@@ -96,13 +96,13 @@ make build-analytics
 
 Espere até os serviço do *ElasticSearch* estar pronto, e execute o comando abaixo para configurar os índices:
 
-```
+```sh
 make config-elastic
 ``` 
 
 Espere até os serviço do *Kibana* estar pronto, e execute o comando abaixo para configurar os *dashboards*:
 
-```
+```sh
 make config-kibana
 ``` 
 
@@ -120,7 +120,7 @@ Existe aqui um exemplo de componente customizado que implementa Análise de Sent
 
 Para utilizá-lo basta introduzir o componente `components.sentiment_analyzer.SentimentAnalyzer` ao arquivo `bot/config.yml`. Como no exemplo:
 
-```ymal
+```yaml
 language : "pt"
 
 pipeline:
